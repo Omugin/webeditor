@@ -1,0 +1,39 @@
+*{<meta charset="utf-8">}*
+#{extends 'WebEditor/main.html' /}
+<body onload="onload()">
+<h1>ChatRoom</h1>
+<hr>
+<div id="messageField">
+
+</div>
+
+<div id="textField">
+	<button class="mode" onclick="selectMode('text')">Text</button>
+	<button class="mode" onclick="selectMode('C')">C</button>
+	<button class="mode" onclick="selectMode('Java')">Java</button>
+	<button class="mode" onclick="selectMode('formula')">Formula</button>
+
+
+    <textarea id="editor" name="comment"></textarea>
+
+	<button onclick="sendMsg()">please push to send message</button>
+	<button onclick="sendAsOther()">send As other</button>
+	<button onclick="clearTextBox()">clear</button>
+
+
+	<ul>
+		<li>P ... Print</li>
+		<li>F ... Function</li>
+		<li>C ... Class(only in Java mode)</li>
+		<li>M ... Main</li>
+	</ul>
+
+	<input id="fileUpload" type="file" name="file" value="Upload your file">
+
+
+</div>
+
+<input id="mode" type="textbox" value="text">
+
+
+</body>

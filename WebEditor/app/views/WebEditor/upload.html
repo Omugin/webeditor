@@ -1,0 +1,16 @@
+*{<meta charset="utf-8">}*
+#{extends 'WebEditor/main.html' /}
+<body>
+<h1>Uploader</h1>
+<hr>
+
+    <form action="@{'/public/downloads/'}" method="post" enctype="multipart/form-data" >
+	<input type="file" name="sample" > <br>
+    <input type="submit" value="送信" >
+    </form>
+
+
+<a href="@{'/public/downloads/panic.txt.zip'}" download="aaaaa.txt" value="aaaa">ファイルをダウンロード</a>
+
+</body>
+
